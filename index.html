@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>🎥 MOVIES IN CINEMA 🎥</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Navigation bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Boboiboy The Movie</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="synopsis.html">Synopsis</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+              The cast
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="maincast.html">Main Cast</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="sidecast.html">Side Cast</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Carousel -->
+  <div class="container my-4"> <!-- Make carousel more inner -->
+    <div id="carouselExampleIndicators" class="carousel slide mx-auto" style="max-width: 1200px;" data-bs-ride="carousel">
+
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
+      </div>
+
+      <div class="carousel-inner">
+
+        <!-- Image -->
+        <div class="carousel-item">
+          <img src="images/Boboiboy Poster 1.jpg" class="d-block w-100 img-fluid"  alt="Poster" style="max-width: 1920px; max-height: 1080px; object-fit: cover;">
+          <div class="position-absolute bottom-0 start-0 text-white p-3 w-100" style="background: rgba(0, 0, 0, 0.7);">
+            <h4>Boboiboy The Movie</h4>
+            <p>A group of alien treasure hunters named <i><b>The Tengkotak</b></i> has arrived on earth and kidnapped <b>Ochobot</b> <i>(Mohd Fathi b Diaz)</i> in order to use him to locate an ancient and powerful Sfera Kuasa hiding on earth. <b>BoBoiBoy</b> <i>(Nur Fathiah bt Diaz)</i> and his <b>super friends</b> must now race against time to save Ochobot and uncover the secrets behind the Sfera Kuasa. Their journey will take them on an adventure filled with action, comedy, and beautiful locales.</p>
+            <small>2019 • Animation</small>
+          </div>
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+
+    </div>
+  </div>
+
+
+  <!-- Section buttons -->
+  <div class="container my-3">
+    <div class="row g-2">
+      <div class="col">
+        <div class="p-3 bg-danger text-white text-center hover-box" onclick="showContent('about')">About The Movie 🎬</div>
+      </div>
+      <div class="col">
+        <div class="p-3 bg-danger text-white text-center hover-box" onclick="showContent('cinema')">In Cinema 🎥</div>
+      </div>
+      <div class="col">
+        <div class="p-3 bg-danger text-white text-center hover-box" onclick="showContent('rating')">Rating ⭐</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Content sections -->
+  <div class="container my-3">
+    <div class="row g-2">
+      <!-- About -->
+      <div class="col content-box" id="about">
+        <div class="p-3 bg-white text-center">
+          <div class="row mt-3">
+            <div class="col-md-6">
+              <p><b>🎥 Directed by:</b> Nizam Razak</p>
+              <p><b>✍ Written by:</b></p>
+              <p><b>1.</b> Nizam Razak</p>
+              <p><b>2.</b> Anas Abdul Aziz</p>
+              <p><b>Based on <i>BoBoiBoy</i> by Nizam Razak</b></p>
+              <p><b>🤩 Starring</b></p>
+              <p><b>1.</b> Nur Fathiah Diaz</p>
+              <p><b>2.</b> Anas Abdul Aziz</p>
+              <p><b>3.</b> Dzubir Mohamed Zakaria</p>
+              <p><b>4.</b> Wong Wai Kay</p>
+              <p><b>5.</b> Azman Zulkiply</p>
+              <p><b>6.</b> Nur Sarah Alisya</p>
+              <p><b>7.</b> Yap Ee Jean</p>
+            </div>
+            <div class="col-md-6">
+              <p><b>🎵 Music by:</b> Yuri Wong</p>
+              <p><b>🌟 Production:</b> Animonsta Studios</p>
+              <p><b>📦Distributed by:</b> Primeworks Studio</p>
+              <p><b>📅 Release date:</b> 3 March 2016</p>
+              <p><b>⏳ Running time:</b> 100 minutes</p>
+              <p><b>🎌 Country:</b> Malaysia</p>
+              <p><b>🗣️ Language:</b> Malay</p>
+              <p><b>💶 Budget:</b> RM5 million</p>
+              <p><b>💶 Box office:</b> RM20 million (Asia Region)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cinema -->
+      <div class="col content-box" id="cinema" style="display:none;">
+        <div class="p-3 bg-banger text-center">
+          <h3>🎬 Now Showing in Cinemas!</h3>
+          <h2><u>Boboiboy The Movie</u></h2>
+          <div class="row mt-3">
+            <div class="col-md-6">
+              <p>📅 <b>Release Date:</b> 28 August 2025 (In cinema)</p>
+              <p>⏱️ <b>Running Time:</b> 1 hr 41 mins</p>
+              <p>🎞️ <b>Genre:</b> Animation</p>
+            </div>
+            <div class="col-md-6">
+              <p>🗣️ <b>Spoken Language:</b> BM</p>
+              <p>💬 <b>Subtitles:</b> ENG</p>
+              <p>🎟️ <b>Classification:</b> U</p>
+            </div>
+          </div>
+          <h2><b>Director</b></h2>
+          <p>Nizam Abdul Razak</p>
+          <h2><b>Cast</b></h2>
+          <p>Nur Fathiah Diaz, Anas Abdul Aziz, Dzubir Mohamed Zakaria</p>
+          <h2><b>Synopsis</b></h2>
+          <p>Boboiboy and his super friends are off to another adventure against time to save Ochobot, who has been kidnapped by a group of alien treasure hunters called <i>The Tengkotak</i> that wants to use him to search for an ancient <b>"Power Sphere"</b>. Along the journey, Boboiboy and his friends uncover the truth behind the sphere and the secrets it possesses.</p>
+          <h2><b><a href="https://epaymentwebapp.gsc.com.my/showtime-by-movies/5484/%28rerun%29boboiboy-the-movie" target="_blank" style="text-decoration: none; color: red;">🎟️ Check your nearest cinema for showtimes</a></b></h2>
+        </div>
+      </div>
+
+      <!-- Rating -->
+      <div class="col content-box" id="rating" style="display:none;">
+        <div class="p-3 bg-banger text-center">
+          <p>⭐ 4.8/5 IMDb</p>
+          <p>⭐⭐⭐⭐⭐ Audience Rating</p>
+          <p>
+            <img src="images/Review1.png" alt="Review 1" width="700">
+            <img src="images/Review2.png" alt="Review 2" width="700">
+            <img src="images/Review3.png" alt="Review 3" width="700">
+          </p>
+          <p><a href="https://letterboxd.com/film/boboiboy-the-movie/" style="text-decoration: none; color: red;">📈 More Reviews</a></p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Script for toggling sections -->
+  <script>
+    function showContent(id) {
+      document.querySelectorAll('.content-box').forEach(box => box.style.display = 'none');
+      document.getElementById(id).style.display = 'block';
+    }
+  </script>
+
+  <!-- Footer -->
+  <div class="container-fluid bg-dark text-white text-center py-3 mt-5">
+    &copy; 2025 All Rights Reserved | Ellyana Ellam Anak Kasau
+  </div>
+
+</body>
+</html>

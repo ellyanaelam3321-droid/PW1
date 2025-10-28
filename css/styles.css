@@ -1,0 +1,53 @@
+body {
+  background-color: white;
+}
+
+h1 { font-family: Arial; font-size: 60px; text-align: center; }
+h2 { font-family: Arial; font-size: 26px; text-align: left; }
+h3 { font-family: Arial; font-size: 30px; text-align: left; }
+p  { font-family: Arial; font-size: 22px; text-align: justify; }
+
+/* Sections */
+.content-box { display: none; }
+
+/* Hover effect */
+.hover-box {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  border-radius: 8px;
+}
+.hover-box:hover {
+  transform: scale(1.08);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  background-color: #c82333;
+  color: yellow;
+}
+
+/* Gradient text effect */
+.gradient-text {
+  background: linear-gradient(45deg, #FFF400, #FF0000, #FFF400);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Portrait poster style */
+.poster-portrait {
+  height: 800px;
+  width: auto;
+  border-radius: 20px;
+  border: 6px solid #fff;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  transition: transform 0.4s, box-shadow 0.4s;
+  object-fit: cover;
+}
+.poster-portrait:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 30px rgba(255, 0, 0, 0.6);
+}
+.carousel-item video,
+.carousel-item img {
+  border-radius: 10px;
+  object-fit: cover;
+}
