@@ -45,16 +45,15 @@
   <div class="container my-4"> <!-- Make carousel more inner -->
     <div id="carouselExampleIndicators" class="carousel slide mx-auto" style="max-width: 1200px;" data-bs-ride="carousel">
 
+      <!-- Only one indicator for one slide -->
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
       </div>
 
       <div class="carousel-inner">
 
-        <!-- Image -->
-        <div class="carousel-item">
+        <!-- Only one image/slide -->
+        <div class="carousel-item active">
           <img src="images/Boboiboy Poster 1.jpg" class="d-block w-100 img-fluid"  alt="Poster" style="max-width: 1920px; max-height: 1080px; object-fit: cover;">
           <div class="position-absolute bottom-0 start-0 text-white p-3 w-100" style="background: rgba(0, 0, 0, 0.7);">
             <h4>Boboiboy The Movie</h4>
@@ -64,10 +63,11 @@
         </div>
       </div>
 
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <!-- Hide navigation buttons since there's only one slide -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev" style="display: none;">
         <span class="carousel-control-prev-icon"></span>
       </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next" style="display: none;">
         <span class="carousel-control-next-icon"></span>
       </button>
 
